@@ -1,0 +1,21 @@
+.sidebar-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2.4rem 2.0rem 2.4rem 2.0rem;
+  gap: 3.2rem;
+  border-right: 1px solid gray;
+}
+
+.sidebar-wrapper span {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 2.0rem;
+  cursor: pointer;
+}
+
+.sidebar-wrapper > span:nth-child(2){
+  color: #1DA1F2;
+}
+

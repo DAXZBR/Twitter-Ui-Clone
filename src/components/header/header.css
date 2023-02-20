@@ -1,0 +1,12 @@
+.tweetshome-wrapper header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.tweetshome-wrapper header h1 {
+  font-weight: 700;
+  font-size: 2.0rem;
+  color: #E1E1E6
+}
