@@ -13,13 +13,14 @@
 }
 
 .tweet-card__info{
+  gap: 3rem;
   display: flex;
   flex-direction: column;
 }
 
 .tweet-card__info h2 {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .tweet-card__info span > p {
@@ -30,7 +31,7 @@
 
 .tweet-card__info > div{
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .tweet-card__info > div div {
@@ -39,7 +40,13 @@
   gap: .5rem;
 }
 
+.tweet-card__info > div div span {
+  font-size: 1.4rem;
+  color: #828282;
+}
+
 .tweet-card__info > p {
+  max-width: 67.2rem;
   min-height: 4.0rem;
   font-size: 1.6rem;
   color: #E1E1E6;

@@ -1,5 +1,4 @@
 import './cardTweets.css'
-import ProfilePicture from '../../assets/ProfileMan.svg';
 
 import {
   ChatCircle,
@@ -7,19 +6,8 @@ import {
   ArrowsCounterClockwise
 } from 'phosphor-react'
 
-const dataUserMock =
-{
-  UserName: "Daxzbr",
-  userProfilePicture: ProfilePicture,
-  userMsg: "lorem teste de rede blabalbalblabbalblasldkflaskdflkasdf",
-  tagUser: "daxzbr",
-  likes: 20,
-  shares: 10,
-  comments: 20,
-}
-
 interface ICardTweets {
-  UserName: string,
+  userName: string,
   userProfilePicture: string
   userMsg: string,
   tagUser: string
@@ -28,34 +16,34 @@ interface ICardTweets {
   comments: number,
 }
 
-export const CardTweets = () => {
+export const CardTweets = ({comments, shares, likes, userName, tagUser, userMsg, userProfilePicture} : ICardTweets) => {
   return (
     <div className='tweet-card'>
       <div className='tweet-card__profile'>
-        <img src={ProfilePicture} alt="profile-picture" />
+        <img src={userProfilePicture} alt="profile-picture" />
       </div>
       <div className='tweet-card__info'>
         <span>
-          <h2>{dataUserMock.UserName}</h2>
-          <p>@{dataUserMock.tagUser}</p>
+          <h2>{userName}</h2>
+          <p>@{tagUser}</p>
         </span>
 
-        <p>{dataUserMock.userMsg}</p>
+        <p>{userMsg}</p>
       
         <div>
           <div>
-            <ChatCircle width={16} /> 
-            <span>{dataUserMock.comments}</span>
+            <ChatCircle width={20} height={20} color="#828282"/> 
+            <span>{comments}</span>
           </div>
 
           <div>
-            <ArrowsCounterClockwise width={16} /> 
-            <span>{dataUserMock.shares}</span>
+            <ArrowsCounterClockwise width={20} height={20} color="#828282"/> 
+            <span>{shares}</span>
           </div>
           
           <div>
-            <Heart width={16} /> 
-            <span>{dataUserMock.likes}</span>
+            <Heart width={20} height={20} color="#828282"/> 
+            <span>{likes}</span>
           </div>
         </div>
       </div>
