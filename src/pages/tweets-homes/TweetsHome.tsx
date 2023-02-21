@@ -1,12 +1,10 @@
-import React from 'react'
-
 import './tweetsHome.css'
 
-import ProfilePicture from '/ProfileGirl.svg'
+import ProfileImg from '../../assets/ProfileGirl.svg'
 
 import { Header } from '../../components/header/Header'
-import { Button } from '../../components/button/Button'
 import { BarDivider } from '../../components/BarDivider'
+import { CardTweets } from '../../components/card-tweets/CardTweets'
 
 export const TweetsHome = () => {
   return (
@@ -14,11 +12,10 @@ export const TweetsHome = () => {
       <div className='container'>
         <Header title='Home'/>
       </div>
-      <BarDivider />
       <div className='create-tweet-input'>
         <div>
           <div className='profile-picture'>
-            <img src={ProfilePicture} alt="profile-picture" />
+            <img src={ProfileImg} alt="profile-picture" />
           </div>
           <textarea placeholder='Whats happening?' />
         </div>
@@ -26,6 +23,8 @@ export const TweetsHome = () => {
           <button>Tweet</button>
         </div>
       </div>
+      <BarDivider />
+      <CardTweets />
     </div>
 
   )

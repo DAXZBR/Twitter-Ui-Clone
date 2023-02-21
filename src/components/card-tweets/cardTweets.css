@@ -1,0 +1,52 @@
+.tweet-profile{
+  width: 5.3rem;
+  height: 5.3rem;
+}
+
+.tweet-card{
+  display: grid;
+  grid-template-columns: 59px 1fr;
+  gap: 1rem;
+  height: fit-content;
+  padding: 2.4rem 2.0rem 2.4rem 2.0rem;
+  border-bottom: 0.1rem solid gray;
+}
+
+.tweet-card__info{
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-card__info h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.tweet-card__info span > p {
+  font-size: 1.4rem;
+  color: #828282;
+  font-weight: 500;
+}
+
+.tweet-card__info > div{
+  display: flex;
+  gap: 3rem;
+}
+
+.tweet-card__info > div div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.tweet-card__info > p {
+  min-height: 4.0rem;
+  font-size: 1.6rem;
+  color: #E1E1E6;
+}
+
+.tweet-card__info > span {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
